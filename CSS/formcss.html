@@ -13,25 +13,24 @@
                     <legend>Dados Pessoais</legend>
                     <table>
                         <tr>
-                         <td>Nome</td>
-                        <td><input autofocus type="text"></td>
-                        
+                         <td>Nome*</td>
+                         <td colspan="3"><input autofocus type="text" placeholder="Digite seu Nome" required></td>
                         </tr>
                         <tr>
-                            <td>RG</td>
-                            <td><input type="text"></td>
-                            <td>CPF</td>
-                            <td><input type="text"></td>
+                            <td>RG*</td>
+                            <td><input type="text" placeholder="XXXXXXXXX-X" required></td>
+                            <td>CPF*</td>
+                            <td><input type="text" placeholder="XXX.XXX.XXX-XX"required></td>
                         </tr>
                         <tr>
-                            <td>Celular(whatsapp):</td>
-                            <td><input type="tel"></td>
+                            <td>Celular(whatsapp)*:</td>
+                            <td><input type="tel" placeholder="(88)XXXXX.XXXX" required></td>
                             <td>Telefone</td>
-                            <td><input type="tel"></td>
+                            <td><input type="tel" placeholder="(88)XXXXX.XXXX"></td>
                         </tr> 
                         <tr>
-                            <td>Data de Nascimento:</td>
-                            <td><input type="date"></td>
+                            <td>Data de Nascimento*:</td>
+                            <td><input type="date" required></td>
                             <td>Naturalidade</td>
                             <td><input type="text" value="Brasileira"></td>
                         </tr> 
@@ -39,6 +38,7 @@
                             <td>Escolariedade</td>
                             <td>
                                 <select>
+                                    <option value="Escolha">--Situação--</option>
                                     <option value="A">Alfabetização</option>
                                     <option value="F">Ensino fundamental</option>
                                     <option value="MC">Ensino Medio Completo</option>
@@ -48,6 +48,7 @@
                             <td>Estado civil</td>
                             <td>
                                 <select>
+                                    <option value="Escolha">--Situação--</option>
                                     <option value="Solteira">Solteira(o)</option>
                                     <option value="Casada">Casada(o)</option>
                                 </select>
@@ -55,6 +56,8 @@
                         </tr>
                     </table>
                 </fieldset>
+                <input type="submit" value="Salvar">
+                <input type="reset" value="limpar">
             </form>
         </div>
         </script>
