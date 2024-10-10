@@ -5,36 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==" crossorigin="anonymous">
     
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5/siQeP+1FmvKfkF1do6J5x6zp0oaL5G8CpSy5Ji" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js" integrity="sha512-owrRHB+hEzYZK50iZ5f5M8yLFz1/ICg3lvKmzPug55OKOrICXHY99DYR4GrbBYOcfMvKYZAF6uJ5iO5j8b5/Jw==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js" integrity="sha512-MlKsyJSZ8l3/hg1LZiwT+IlEXQlxxKuRI7gtOJoDWxy+gA45TIYmLtQXH1IvMQw0SUlsKDbY6kpvJZ6jpP9d2Q==" crossorigin="anonymous"></script>
 </head>
-<body style="background-color: rgb(46, 125, 194);">
-    <nav class="navbar bg-dark mb-5">
+<body style="background-color: rgb(78, 78, 133);">
+    <nav class="navbar bg-success navbar-expand-lg">
         <div class="container-fluid">
             <a href="#" class="navbar-brand"> 
                 <img src="../IMG/coluna/silenthill.jpg" width="150">
             </a>
-
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Serviços</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Planos</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
-    <div class="container card">
+    <div class="container card mt-4">
         <form>
             <div class="form-group mt-2">
-                <label>Email</label>
-                <input type="email" class="form-control" placeholder="exemplo@email.com">
+                <label for="email">Email</label>
+                <input type="email" id="email" class="form-control" placeholder="exemplo@email.com">
             </div>
             <div class="form-group mt-2">
-                <label>Senha</label>
-                <input type="password" class="form-control" placeholder="Digite a senha">
+                <label for="password">Senha</label>
+                <input type="password" id="password" class="form-control" placeholder="Digite a senha">
             </div>
             <div class="form-check mt-2">
-                <input type="checkbox" class="form-check-input">
-                <label class="form-check-label">Você aceita receber notificações dos nossos emails ?</label>
+                <input type="checkbox" id="notifications" class="form-check-input">
+                <label for="notifications" class="form-check-label">Você aceita receber notificações dos nossos emails?</label>
             </div>
-            <input type="submit" class="btn btn-warning mt-2 mb-2">
+            <input type="submit" class="btn btn-warning mt-2 mb-2" value="Enviar">
         </form>
     </div>
 </body>
